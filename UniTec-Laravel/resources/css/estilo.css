@@ -11,6 +11,17 @@
     background: linear-gradient(90deg, rgba(60,135,20,1) 0%, rgba(64,245,38,1) 35%, rgba(143,222,195,1) 100%);
 }
 
+.form-login{
+  padding-inline: 30em;
+  font-family:'fantasy';
+}
+
+.form-login-border{
+  border-radius: 10px;
+  padding-inline: 3em;
+  padding-block: 7em;
+}
+
 #slider img{
 
     position:absolute;

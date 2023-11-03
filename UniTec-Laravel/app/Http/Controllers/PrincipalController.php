@@ -11,4 +11,12 @@ class PrincipalController extends Controller
         return view('site.principal', ['titulo' => 'Bem-vindo']);
         //if naologado
     }
+
+    public function principallogado(Request $request){
+        return view('site.principal', ['titulo' => 'Bem-vindo']);
+        //if naologado
+    }
+
+
 }
+

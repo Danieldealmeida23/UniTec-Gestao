@@ -16,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal'])->name('site.index');
 Route::get('/Contato', [\App\Http\Controllers\PrincipalController::class, 'contato'])->name('site.contato');
 //Aplicativos protegidos
-Route::prefix('/App')->group(function(){
+Route::middleware([\App\Http\Middleware\AutenticacaoMiddleware::class])->prefix('/App')->group(function(){
+    Route::get('/home', [\App\Http\Controllers\PrincipalController::class, 'principallogado'])->name('app.index');
     Route::get('/Chamada', [\App\Http\Controllers\ProdutoController::class, 'chamada'])->name('app.chamada');
     Route::get('/Financeiro', [\App\Http\Controllers\ProdutoController::class, 'financeiro'])->name('app.financeiro');
     Route::get('/Provas', [\App\Http\Controllers\ProdutoController::class, 'provas'])->name('app.provas');
@@ -24,7 +25,10 @@ Route::prefix('/App')->group(function(){
     Route::get('/Estacionamento', [\App\Http\Controllers\ProdutoController::class, 'estacionamento'])->name('app.estacionamento');
 });
 
-Route::get('/login', [\App\Http\Controllers\PrincipalController::class, 'login'])->name('site.login');
+Route::get('/login/{erro?}', [\App\Http\Controllers\LoginController::class, 'login'])->name('site.login');
+Route::post('/login', [\App\Http\Controllers\LoginController::class, 'autenticar'])->name('site.login');
+Route::get('/logout}', [\App\Http\Controllers\LoginController::class, 'logout'])->name('site.logout');
+
 
 /*
 Route::get('/Sobrenos', function () {
