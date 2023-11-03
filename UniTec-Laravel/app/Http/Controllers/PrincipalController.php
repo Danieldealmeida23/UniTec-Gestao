@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PrincipalController extends Controller
 {
-    public function principal(){
+    public function principal(Request $request){
         //if logado
         return view('site.principal', ['titulo' => 'Bem-vindo']);
         //if naologado
