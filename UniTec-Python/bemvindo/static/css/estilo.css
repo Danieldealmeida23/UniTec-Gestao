@@ -1,0 +1,231 @@
+#slider{
+    display:flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items:center;
+    border-radius: 30px;
+    width:1200px;
+    max-width: 1200px;
+    height:500px;
+    max-height: 500px;
+    background: linear-gradient(90deg, rgba(60,135,20,1) 0%, rgba(64,245,38,1) 35%, rgba(143,222,195,1) 100%);
+}
+
+#slider img{
+
+    position:absolute;
+    max-width: 1190px;
+    max-height: 470px;
+    object-fit: cover;
+    opacity:0;
+}
+
+#slider img.selected{
+    opacity: 1;
+}
+
+  
+  /*logo*/
+  .titulopag {
+    text-align: center;
+    color: #4F4F4F;
+    font-family:serif;
+    font-style: italic;
+    font-size: 18px;
+    border-radius: 500;
+    }
+    
+    .tituloemp{
+      text-align: center;
+      font-size: 48px;
+      color: rgb(12, 12, 12);
+     font-family: stretch;
+    }
+    .cadastro{
+    background-color: #e3e3e3;
+    color: #4f4f4f;
+    font-size: 14px;
+    width: 100%;
+    padding: 1%;
+    
+    }
+    
+    
+    td{
+    text-align: justify;
+    
+    }
+    .botaoinsert{
+      width: 100%;
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 10px 12px;
+      bottom: 0;
+    }
+    .botaoAgendLanc{
+      width: 45%;
+      display: block;
+      color: #666;
+      text-align: center;
+      padding: 10px 12px;
+      bottom: 0;
+    
+    }
+    .botaoinsert:hover{
+      background-color: #4CAF50;
+      color: #f3f3f3
+    }
+    .rodape{
+      display: inline-block;
+      bottom: 0;
+      width: 100%;
+      font-family: cursive;
+    }
+    .tabelaLanc{
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+    padding: 10px 12px;
+    }
+    .LabelConsulta{
+      padding: 8px 10px;
+      
+    }
+    
+    .Table,.AssociationTable,.TableDragging,.TableAcceptDrag,.TableNoAcceptDrag,.TableGrid,.TableTop,.TableContent,.Table100x100,.TableBorder,.TableOutSet,.TableSolid,.TableLeftMenu,.TableTopMenu,.ViewTable,.HorizontalLine,.HorizontalSpace,.TableBottom,.RecentLinksTable,.Table80,.Table95,.GridLineEven,.GridLineOdd,.GridLineWhite,.GridTitle,.TableFiltros,.DataTable,.SpaceTable,.TableTransactionTitle,.TableTransactionContent,.tbFundo,.tbBranco,.TbFiltros,.TitleTable,.TableH400,.TablePopUp,.TblVecComModelo,.TblVecComDetalhe,.TableW500,.TableFiltro,.TableProdutoBalcao_Det,.TableProdutoBalcao_Relac,.TableContorno,.TableContornoAlert,.TblVecComAcessorio,.TableProdutoBalcao_Carrinho,.TableProdutoBalcao_CarrinhoLista,.TableProdutoBalcao_CarrinhoProduto,.TableAuxDescricao,.TableTab,.TableH500x800,.TableH400x600,.TableTabFixa,.TableOSPrompt,.TbSemAltura,.DataTableConfirma,.TableProdutoBalcao,.TableW700,.TableW800,.TableH400x800,.TableH450,.TblPropostaPacote,.tbfiltroselecaocentral,.tbfiltroselecaonormal,.tbfiltroselecaosel,.tbfiltroselecaototal,.TableBordaCinza,.TableBlocoHoraAtual,.TblPreta,.TblPretaSugestao,.TblAzulClaro,.TblVerdeClaro,.TblRoxoClaro,.TableHide,.TblVerdeAgua,.TblSugestao,.TblHoraExtra,.QuadroMSX,.QuadroMSXTableMain,.QuadroMSXTableMiddle,.QuadroMSXTableHeader,.QuadroMSXTable03,.QuadroMSXTable02,.QuadroMSXTable02Agenda,.QuadroMSXTable02AHora,.QuadroMSX100,.QuadroMSX50x100,.QuadroMSXTableCns,.QuadroMSXTableCns01,.QuadroMSXTableCns02,.QuadroMSXTableCns05,.QuadroMSXTableCns04,.QuadroMSXTableCns03,.QuadroMSXTableCns00,.QuadroMSXTable02Horario,.QuadroMSXTable02HorarioA,.QuadroMSXTable02HorarioH,.QuadroMSXTable02HorarioB,.QuadroMSXTable02Marcacao,.QuadroMSXTable02MAlmoco,.QuadroMSXTable02MHora,.QuadroMSXTable02MEmServico,.QuadroMSXTable02MParcial,.QuadroMSXTable02M90,.QuadroMSXTable02MVencido,.QuadroMSXTable02MFinalizado,.QuadroMSXTable02MAlmocoCheio,.QuadroMSXAgenda100,.QuadroTDB,.QuadroTDBTableMiddle,.QuadroTDBTableHeader,.QuadroTDBTable03,.QuadroTDBTable02Horario,.QuadroTDBTable02HorarioA,.QuadroTDBTable02HorarioH,.QuadroTDBTable02Tmo,.QuadroTDBTable02Almoco,.QuadroTDBTable02Livre,.QuadroTDBTableMain,.QuadroTDB100,.QuadroTDBTable02,.QuadroTDBTable02Agenda,.QuadroTDBTable02AHora,.QuadroTDBTable02AgendaM,.QuadroTDBTable02AHoraM,.QuadroTDBTableBox,.QuadroTDBTableBoxHeader,.TableFooterFixed,.TableContentMBotton,.TableRightFixed,.QuadroMSXBranco,.QuadroMSXTableMiddleBranco,.QuadroMSXTableHeaderBranco,.QuadroMSXTable03Branco,.QuadroMSX50x100Branco,.QuadroMSXTable02HorarioBranco,.QuadroMSXTable02HorarioABranco,.QuadroMSXTable02HorarioHBranco,.QuadroMSXTable02MarcacaoBranco,.QuadroMSXTable02MAlmocoBranco,.QuadroMSXTable02MHoraBranco,.QuadroMSXTable02MEmServicoBranco,.QuadroMSXTable02MParcialBranco,.QuadroMSXTable02M90Branco,.QuadroMSXTable02MVencidoBranco,.QuadroMSXTable02MFinalizadoBranco,.QuadroMSXAgenda100Branco,.QuadroMSXTableMainBranco,.QuadroMSX100Branco,.QuadroMSXTable02Branco,.QuadroMSXTable02AgendaBranco,.QuadroMSXTable02AHoraBranco,.QuadroMSXTable02AgendaBrancoM,.QuadroMSXTable02AHoraBrancoM,.QuadroMSXTableCnsBranco,.QuadroMSXTableCns01Branco,.QuadroMSXTableCns02Branco,.QuadroMSXTableCns05Branco,.QuadroMSXTableCns04Branco,.QuadroMSXTableCns03Branco,.QuadroMSXTableCns00Branco,.QuadroMSXTable02MarcacaoBranco40,.QuadroMSXTable02MAlmocoBranco40,.QuadroMSXTable02MHoraBranco40,.QuadroMSXTable02MEmServicoBranco40,.QuadroMSXTable02MParcialBranco40,.QuadroMSXTable02M90Branco40,.QuadroMSXTable02MVencidoBranco40,.QuadroMSXTable02MFinalizadoBranco40
+{
+	margin-bottom: 5pt;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	margin-top: 0pt;
+	padding-bottom: 0pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
+	padding-top: 0pt;
+	border-style: none;
+	border-width: 0px;
+	font-style: normal;
+
+}
+
+.Table tr:hover{
+    background-color: #e3e3e3;
+}
+.Table td{
+    padding-bottom: 25pt;
+
+}
+
+.TextBlock,.AssociationTitle,.TextBlockDragging,.TextBlockAcceptDrag,.TextBlockNoAcceptDrag,.bullet,.subBullet,.TextTable,.TBTopMenu,.TBLeftMenu,.Title,.SubTitle,.Label,.SmallText,.TextBlockHeader,.SelectedTab,.UnSelectedTab,.RecentLink,.FieldSetTitle,.Separator,.RequiredAttributeDescription,.RequiredAttributeDescriptionCell,.RequiredAttributeCell,.WhiteText,.TestTitle,.testLine1,.TestLine2,.TextBlockMsg,.TextBlockError,.DataTitleCellLeft,.DataTitleCell,.DataDescriptionCell,.RequiredDataDescriptionCell,.DataDescriptionCellFixed100,.RequiredDataDescriptionCellFixed100,.DataDescriptionCellLeft,.DataDescriptionCell13PxBold,.DataDescriptionCell13PxBoldLeft,.DataDescriptionCell15PxBold,.DataDescriptionCellMerged,.DataDescriptionCellSemFundo,.DataDescriptionCellFixed500,.DataDescriptionCellSemFundoLeft,.DataContentCell,.RequiredDataContentCell,.RequiredDataContentCellFixed200,.RequiredDataContentCellUp,.DataContentCellView,.DataContentCellFixed200,.DataContentCellFixed50,.DataContentCellUp,.DataContentCellFixed100,.DataContentCellMerged,.DataContentCell13PxBold,.DataContentCell15PxBold,.DataContentCellFixed350,.DataContent,.RequiredDataContent,.DataContent13PxBold,.DataContent15PxBold,.DataContent13PxBoldItalic,.DataDescription,.RequiredDataDescription,.DataDescription13PxBold,.DataDescription15PxBold,.TextBlockTransactionTitle,.TFiltros,.TextVecComFiltro,.TextVecComDet,.TextVecComSeparator,.TextVecComModelo,.TextVecComTitulo,.TextVecComVeiculo,.TextFlxTitulo,.TextVecComPromocao,.TextPrpServicoRight,.FreeStyleCell,.FreeStyleCell030,.FreeStyleCell050,.FreeStyleCell020,.FreeStyleCell080,.FreeStyleCell100,.FreeStyleCell120,.FreeStyleCell250,.FreeStyleCell370,.FreeStyleCell280,.FreeStyleCell400,.FreeStyleCell000,.FreeStyleCell070,.FreeStyleCell090,.FreeStyleCell310,.FreeStyleCell350,.TBLeftMenu13pt,.TextBlockTituloPesquisa,.TextBlockSubTituloPesquisa,.TextBlockPesquisaPergunta,.TB_ProdutoBalcao_Tabela,.HideCell,.TextPrpTitulo,.TextPrpDetalhe,.TextPrpServico,.TextPrpServicoLeft,.TextBlockOficinaConsulta,.TextDesvinculada,.TextBlockAzul,.QuadroMSXTB,.QuadroMSXCellLeft,.QuadroMSXCellQuadro,.QuadroMSXText,.QuadroMSXTextI,.QuadroMSXText03,.QuadroMSXSts,.QuadroMSXStsEmServico,.QuadroMSXStsParcial,.QuadroMSXSts90,.QuadroMSXStsFinalizado,.QuadroMSXStsVencido,.QuadroMSXCell03,.QuadroMSXCell02,.QuadroMSXCell02Prd,.QuadroMSXCell02Sts,.QuadroMSXCell02PrdB,.QuadroMSXCell02H,.QuadroMSXHeaderCellCenter,.QuadroMSXHeaderCellLeft,.QuadroMSXHeaderCellRight,.QuadroMSXTBAgenda,.QuadroMSXAgenda03,.QuadroMSXAgenda01,.QuadroMSXAgenda02,.QuadroMSXAgendaTitle,.QuadroMSXTBBranco,.QuadroMSXCellLeftBranco,.QuadroMSXCellQuadroBranco,.QuadroMSXTextBranco,.QuadroMSXTextIBranco,.QuadroMSXText03Branco,.QuadroMSXStsBranco,.QuadroMSXStsEmServicoBranco,.QuadroMSXStsParcialBranco,.QuadroMSXSts90Branco,.QuadroMSXStsFinalizadoBranco,.QuadroMSXStsVencidoBranco,.QuadroMSXCell03Branco,.QuadroMSXCell02Branco,.QuadroMSXCell02HBranco,.QuadroMSXCell02PrdBranco,.QuadroMSXHeaderCellCenterBranco,.QuadroMSXHeaderCellLeftBranco,.QuadroMSXHeaderCellRightBranco,.CellWidht100,.AgendamentoMarrom,.AgendamentoAmarelo,.AgendamentoAzul,.AgendamentoAzulEscuro,.AgendamentoCinza,.AgendamentoCinzaEscuro,.AgendamentoLaranja,.AgendamentoLilas,.AgendamentoPreto,.AgendamentoRoxo,.AgendamentoVerde,.AgendamentoVerdeEscuro,.AgendamentoVermelho,.TB_VeiculoTRN,.TB_VeiculoTRNGreen,.TB_VeiculoTRNRed,.TB_VeiculoTRNYellow,.TB_VeiculoTRNCyan,.QuadroTDB,.QuadroTDBCell02,.QuadroTDBCell02H,.QuadroTDBCellLeft,.QuadroTDBCellQuadro,.QuadroTDBHeaderCellCenter,.QuadroTDBHeaderCellLeft,.QuadroTDBHeaderCellRight,.QuadroTDBText,.QuadroTDBTextI,.QuadroTDBText03,.QuadroTDBCell03,.QuadroTDBCell03Quadro,.QuadroTDBCell03Red,.QuadroTDBCell03HLivre
+{
+	padding-right: 3pt;
+	white-space: nowrap;
+	border-style: double;
+	border-width: 0px;
+	font-family: Arial;
+	font-size: 9pt;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	color: #747474;
+	vertical-align: middle;
+
+}
+.AssociationTitle
+{
+	font-size: 10pt;
+	font-weight: bold;
+	color: Black;
+
+}
+
+.AssociationTable
+{
+	background-color: #E4E5E6;
+	border-bottom-color: #404040;
+	border-left-color: #404040;
+	border-right-color: #404040;
+	border-top-color: #404040;
+	border-style: solid;
+	border-width: 2px;
+
+}
+.Contorno{
+    border-bottom-color: #E0E0E0;
+    border-left-color: #E0E0E0;
+    border-right-color: #E0E0E0;
+    border-top-color: #E0E0E0;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight: bold;
+    color: #333333;
+}
+
+.Contorno legend{
+        font-size: 14pt;
+        font-weight: bold;
+}
+
+.tableLancPag {
+	width: auto;
+}
+
+.tdLancPag {
+  padding: 3px;
+  text-align: left;
+  border-bottom: 1px solid #333333;
+}
+
+.card_info_loja{
+  background-color: #e3e3e3;
+  padding: 10px;
+}
+
+.card_info_loja:hover{
+  background-color: #747474;
+}
+.card_info_loja img{
+  width:180px;
+  height:180px;
+  border-radius: 5em;
+}
+
+.desc_loja {
+  font-family: Arial;
+  font-size: 9pt;
+  font-weight: bold;
+  color: #333333;
+}
+
+.pedido_desc {
+  font-family: Arial;
+  font-size: 9pt;
+  font-weight: bold;
+  color: #333333;
+}
+
+.tituloDescricaoPedido{
+  font-family: Arial;
+  font-size: 13pt;
+  font-weight: bold;
+  color: #333333;
+}
+
+.btnTam {
+  font-size: 9pt;
+}
+
+
+
+  

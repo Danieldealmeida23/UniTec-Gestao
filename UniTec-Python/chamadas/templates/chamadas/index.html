@@ -1,0 +1,60 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+    <body class="p-3 mb-2 bg-light">
+    <strong>#_Visualização apenas para os professores. Validação da chamada feita por meio de envio das informações de login do JACAD juntamente com alguns dados de identificação do aparelho.</strong>
+                    <!-- CORPO DO BODY                      -->
+                <br><br><br>
+    <div class="d-flex justify-content-center">
+
+
+
+            <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark">Seja bem vindo professor
+                <strong>{{nome_professor}}</strong>
+
+
+            <br>
+
+
+
+            <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark"><div class="">Aula:<strong> {{aula_ide}}</strong><br></div>
+
+            <div class="">Matéria:<strong> {{materia_ide}} <br><br></strong> </div>
+
+            <div class="p-3 mb-2 bg-light text-dark"><strong> Abaixo o QR Code de chamada</strong></div>
+            <br>
+            <br>
+
+        <div id="main" class="d-flex justify-content-center"></div>
+<br><br>
+        <input class="btn btn-light" type="button" onclick="Voltar()" value="Voltar">
+        <input class="btn btn-light" type="button" onclick="AtualizarQR()" value="Atualizar Qr-Code">
+        <input class="btn btn-light" type="button" onclick="SistemaJACAD()" value="Checar informações no sistema JACAD">
+
+        </div>
+
+    </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script>
+    function getBase64Img() {
+        var base64trat = " {{qrcode}}";
+        var base64trat1 = base64trat.replace("b&#x27;", "");
+        var base64trat2 = base64trat1.replace("&#x27;", "");
+        return "data:image/png;base64,"+base64trat2+"";
+    }
+    var base64img = getBase64Img();
+    function Base64ToImage(base64img, callback) {
+        var img = new Image();
+        img.onload = function() {
+            callback(img);
+        };
+        img.src = base64img;
+    }
+    Base64ToImage(base64img, function(img) {
+        document.getElementById('main').appendChild(img);
+        var log = "w=" + img.width + " h=" + img.height;
+    });
+</script>
+</html>
+{% endblock%}

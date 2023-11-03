@@ -1,0 +1,72 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+<body>
+
+<table class="Table">
+    <tr>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da Aula</legend>
+                <label>Aula: <strong>{{aula_ide}}</strong> | Matéria: <strong>{{materia_ide}}</strong> | Turma: <strong>{{turma_ide}}</strong></label>
+            </fieldset>
+        </td>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da Turma/Professor</legend>
+                <label>Aluno: <strong>{{nome}}</strong> | Turma: <strong>{{turma_ide}}</strong> | Horario: <strong>{{horario_aula}}</strong> | Professor: <strong>{{professor_ide}}</strong></label>
+            </fieldset>
+        </td>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da prova</legend>
+                <label>Data: <strong>{{data_prova}}</strong> | Arquivo respostas para conferência: .pdf</label>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da Aula</legend>
+                <label>Aula: <strong>{{aula_ide}}</strong> | Matéria: <strong>{{materia_ide}}</strong> | Turma: <strong>{{turma_ide}}</strong></label>
+            </fieldset>
+        </td>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da Turma/Professor</legend>
+                <label>Aluno: <strong>{{nome}}</strong> | Turma: <strong>{{turma_ide}}</strong> | Horario: <strong>{{horario_aula}}</strong> | Professor: <strong>{{professor_ide}}</strong></label>
+            </fieldset>
+        </td>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da prova</legend>
+                <label>Data: <strong>{{data_prova}}</strong> | Arquivo respostas para conferência: .pdf</label>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da Aula</legend>
+                <label>Aula: <strong>{{aula_ide}}</strong> | Matéria: <strong>{{materia_ide}}</strong> | Turma: <strong>{{turma_ide}}</strong></label>
+            </fieldset>
+        </td>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da Turma/Professor</legend>
+                <label>Aluno: <strong>{{nome}}</strong> | Turma: <strong>{{turma_ide}}</strong> | Horario: <strong>{{horario_aula}}</strong> | Professor: <strong>{{professor_ide}}</strong></label>
+            </fieldset>
+        </td>
+        <td>
+            <fieldset class="Contorno">
+                <legend>Informações da prova</legend>
+                <label>Data: <strong>{{data_prova}}</strong> | Arquivo respostas para conferência: .pdf</label>
+            </fieldset>
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</DOCTYPE>
+
+{% endblock %}

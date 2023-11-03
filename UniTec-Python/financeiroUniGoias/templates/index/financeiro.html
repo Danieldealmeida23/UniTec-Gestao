@@ -1,0 +1,907 @@
+{% extends 'base.html' %} {% load static%} {% block content %}
+
+<table
+  id="tabela-transacoes"
+  class="table table-striped table-bordered dataTable no-footer mb-0"
+  role="grid"
+>
+  <thead>
+    <tr>
+      <th class="text-center">Referência</th>
+
+      <th class="text-center">Vencimento</th>
+      <th class="text-right">Valor Original</th>
+      <th class="text-right">Valor</th>
+      <th class="text-right">Valor Pago</th>
+      <th class="text-center">Situação</th>
+
+      <th class="text-center">Boleto</th>
+
+      <th class="text-center">PIX</th>
+
+      <th class="text-center">Detalhar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="transacao_1199605">
+      <td class="text-center align-middle">Inscrição em Eventos</td>
+
+      <td class="text-center align-middle" id="dataVencimento">15/05/2023</td>
+
+      <td class="text-right align-middle">0,00</td>
+
+      <td class="text-right align-middle">0,00</td>
+
+      <td class="text-right align-middle">0,00</td>
+
+      <td class="text-center tr-BAIXADA align-middle" id="situacao">Baixada</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1199605"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1388148">
+      <td class="text-center align-middle">Inscrição em Eventos</td>
+
+      <td class="text-center align-middle" id="dataVencimento">22/06/2023</td>
+
+      <td class="text-right align-middle">0,00</td>
+
+      <td class="text-right align-middle">0,00</td>
+
+      <td class="text-right align-middle">0,00</td>
+
+      <td class="text-center tr-BAIXADA align-middle" id="situacao">Baixada</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1388148"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_960887">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">12/08/2022</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.247,33 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 909,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 475,96 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/960887"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_962880">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">22/08/2022</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.247,33 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 909,44 </span>
+      </td>
+
+      <td class="text-right align-middle">0,00</td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/962880"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_967867">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">30/09/2022</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.247,33 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 909,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 475,96 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/967867"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_978277">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">31/10/2022</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.247,33 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 909,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 475,96 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/978277"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_987903">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">30/11/2022</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.247,33 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 909,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 475,96 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/987903"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_997207">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">30/12/2022</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.247,33 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 909,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 475,96 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/997207"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1004713">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">31/01/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1004713"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1018978">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">28/02/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1018978"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1077559">
+      <td class="text-center align-middle">Multa da Biblioteca</td>
+
+      <td class="text-center align-middle" id="dataVencimento">22/03/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 2,00 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 2,00 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 2,00 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1077559"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1028142">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">31/03/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1028142"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1069365">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">28/04/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1069365"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1069366">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">31/05/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1069366"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1069367">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">30/06/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1069367"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1427904">
+      <td class="text-center align-middle">Outros</td>
+
+      <td class="text-center align-middle" id="dataVencimento">28/07/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 25,00 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 25,00 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 25,00 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1427904"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1396656">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">31/07/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1396656"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1414251">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">31/08/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1414251"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+
+    <tr id="transacao_1414252">
+      <td class="text-center align-middle">Mensalidade</td>
+
+      <td class="text-center align-middle" id="dataVencimento">30/09/2023</td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 1.039,44 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 757,87 </span>
+      </td>
+
+      <td class="text-right align-middle">
+        <span class="" style="color: green"> 396,63 </span>
+      </td>
+
+      <td class="text-center tr-PAGO align-middle" id="situacao">Pago</td>
+
+      <td class="text-center align-middle" rowspan="1">
+        <a href="#" class="btn btn-default disabled btn-sm" title="Boleto">
+          <i class="fas fa-barcode"></i> Boleto
+        </a>
+      </td>
+
+      <td class="text-center align-middle">
+        <button
+          type="button"
+          disabled="disabled"
+          class="btn btn-default disabled btn-sm"
+        >
+          <i class="fas fa-qrcode"></i>
+          PIX
+        </button>
+      </td>
+
+      <td class="text-center align-middle">
+        <a
+          href="/academico/aluno-v2/financeiro/detalhar/1414252"
+          class="btn btn-secondary btn-sm"
+        >
+          Detalhar
+        </a>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td class="text-right font-large" colspan="3">
+        =
+
+        <span class="" style="color: green"> 16.865,94 </span>
+      </td>
+      <td class="text-right font-large">
+        =
+
+        <span class="" style="color: green"> 12.304,47 </span>
+      </td>
+      <td class="text-right font-large">
+        =
+
+        <span class="" style="color: green"> 5.976,47 </span>
+      </td>
+    </tr>
+  </tfoot>
+</table>
+
+{%endblock%}
