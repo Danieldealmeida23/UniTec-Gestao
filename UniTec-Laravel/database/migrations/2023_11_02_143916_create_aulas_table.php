@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('id_materia');
             $table->integer('horario_periodo'); //matutino = 1, vespertino = 2, noturno = 3
             $table->integer('horario_aula'); //cada período é separado em 3 horarios de aula já definidos. A separação será feita numericamente(aulas 1, 2 e 3)
-            $table->integer('id_professor');
+            $table->integer('id_professor')->nullable();
             $table->timestamps();
 
             $table->foreign('id_professor')->references('id_professor')->on('usuarios');

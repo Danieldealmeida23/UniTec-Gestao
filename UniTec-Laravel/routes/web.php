@@ -18,11 +18,14 @@ Route::get('/Contato', [\App\Http\Controllers\PrincipalController::class, 'conta
 //Aplicativos protegidos
 Route::middleware([\App\Http\Middleware\AutenticacaoMiddleware::class])->prefix('/App')->group(function(){
     Route::get('/home', [\App\Http\Controllers\PrincipalController::class, 'principallogado'])->name('app.index');
+    Route::get('', [\App\Http\Controllers\PrincipalController::class, 'principallogado'])->name('app.index');
     Route::get('/Chamada', [\App\Http\Controllers\ProdutoController::class, 'chamada'])->name('app.chamada');
     Route::get('/Financeiro', [\App\Http\Controllers\ProdutoController::class, 'financeiro'])->name('app.financeiro');
+    Route::get('/Pagamento', [\App\Http\Controllers\EstacionamentoController::class, 'pagamentoEstacionamento'])->name('app.financeiroestacionamento');
     Route::get('/Provas', [\App\Http\Controllers\ProdutoController::class, 'provas'])->name('app.provas');
     Route::get('/PracadeAlimentacao', [\App\Http\Controllers\ProdutoController::class, 'pracadealimentacao'])->name('app.pracaalimentacao');
-    Route::get('/Estacionamento', [\App\Http\Controllers\ProdutoController::class, 'estacionamento'])->name('app.estacionamento');
+    Route::get('/Estacionamento', [\App\Http\Controllers\EstacionamentoController::class, 'estacionamento'])->name('app.estacionamento');
+    Route::get('/Estacionamento/ocupar/{id_vaga}', [\App\Http\Controllers\EstacionamentoController::class, 'ocuparvaga'])->name('app.ocuparvaga');
 });
 
 Route::get('/login/{erro?}', [\App\Http\Controllers\LoginController::class, 'login'])->name('site.login');

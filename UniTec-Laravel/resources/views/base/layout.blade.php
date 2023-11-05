@@ -20,6 +20,7 @@
 </head>
 <body>
 @include('base._partials.menu')
+@yield('bemvindo')
 @yield('content')
 @yield('footer')
 </body>

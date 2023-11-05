@@ -28,16 +28,20 @@
                         Provas
                     </a>
                     <div class="dropdown-menu" axria-labelledby="navbarDropdown">
+@if(isset($_SESSION['professor']))
                         <a class="dropdown-item" href="">Adicionar</a>
+@endif
                         <a class="dropdown-item" href="">Visualizar</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('app.financeiro')}}">financeiro</a>
                 </li>
+@if(isset($_SESSION['professor']))
                 <li class="nav-item">
                     <a class="nav-link " href="{{route('app.chamada')}}">Chamada</a>
                 </li>
+@endif
             <ul class="navbar-nav collapse navbar-collapse justify-content-end">
                 <li class="nav-item">
                     <a href="{{route('site.logout')}}" class="btn btn-success ">Logout</a>

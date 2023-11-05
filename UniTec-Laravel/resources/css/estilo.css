@@ -4,8 +4,7 @@
     justify-content: center;
     align-items:center;
     border-radius: 30px;
-    width:1200px;
-    max-width: 1200px;
+    width:90%;
     height:500px;
     max-height: 500px;
     background: linear-gradient(90deg, rgba(60,135,20,1) 0%, rgba(64,245,38,1) 35%, rgba(143,222,195,1) 100%);
@@ -16,11 +15,48 @@
   font-family:'fantasy';
 }
 
+.mensagem-inicio{
+  width:100%;
+  height: 10em;
+  padding-top: 4em;
+  background-color: #4CAF50;
+  margin-bottom: 3em;
+  font-family: cursive;
+}
+
+.content-chamada{
+background-color: #E4E5E6;
+}
+
+.vaga-estacionamento{
+  border-style: solid;
+  border-color: #747474;
+  height: 8em;
+  width: 40px;
+  font-size: 8px;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.ocupado{
+  background-color: #bb2124;
+  color:#E0E0E0 ;
+}
+
+.minhaVaga{
+  background-color: #21bb5c;
+  color:#E0E0E0 ;
+}
+
+
+
 .form-login-border{
   border-radius: 10px;
   padding-inline: 3em;
   padding-block: 7em;
 }
+
+
 
 #slider img{
 
