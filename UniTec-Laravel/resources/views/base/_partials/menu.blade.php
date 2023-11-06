@@ -1,6 +1,6 @@
 
 <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-light">
         <img src="{{ Vite::asset('resources/img/patented/logo-unigoias-vertical.png') }}" width="130px" height="100px">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -13,6 +13,7 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="{{route('site.index')}}">Início</a>
                 </li>
+            </ul>
 @endif
 @if(isset($_SESSION))
                 <li class="nav-item">
@@ -29,18 +30,21 @@
                     </a>
                     <div class="dropdown-menu" axria-labelledby="navbarDropdown">
 @if(isset($_SESSION['professor']))
-                        <a class="dropdown-item" href="">Adicionar</a>
+                        <a class="dropdown-item" href="{{route('app.cadastrarprovas')}}">Adicionar</a>
 @endif
-                        <a class="dropdown-item" href="">Visualizar</a>
+                        <a class="dropdown-item" href="{{route('app.visualizarprovas')}}">Visualizar</a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('app.financeiro')}}">financeiro</a>
                 </li>
+            </ul>
 @if(isset($_SESSION['professor']))
+            <ul class="navbar-nav collapse navbar-collapse">
                 <li class="nav-item">
                     <a class="nav-link " href="{{route('app.chamada')}}">Chamada</a>
                 </li>
+            </ul class="navbar-nav collapse navbar-collapse justify-content-end">
 @endif
             <ul class="navbar-nav collapse navbar-collapse justify-content-end">
                 <li class="nav-item">
@@ -49,8 +53,7 @@
                 </li>
             </ul>
 @else
-            <ul>
-            <ul class="navbar-nav collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav collapse navbar-collapse justify-content-center">
                 <li class="nav-item">
                     <a href="{{ route('site.login') }}" class="btn btn-success">Login</a>
                 </li>

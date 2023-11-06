@@ -10,6 +10,7 @@ class Materia extends Model
     use HasFactory;
     protected $table = 'materias';
     protected $fillable = [
+        'id_materia',
         'nome_materia',
         'qtd_horas',
         'id_curso',

@@ -6,7 +6,7 @@
 @section('content')
 @if(isset($nome))
     @section('bemvindo')
-    <div class="mensagem-inicio d-flex justify-content-center">
+    <div class="mensagem-inicio d-flex justify-content-center text-light">
         <h2>Bem-vindo(a) 
             @php
                 echo $nome;   

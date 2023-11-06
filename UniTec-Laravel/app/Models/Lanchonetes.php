@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Lanchonetes extends Model
 {
     use HasFactory;
+    protected $fillable = ['id_loja', 'sala', 'id_usuario'];
 }

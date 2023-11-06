@@ -14,18 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\PrincipalController::class, 'principal'])->name('site.index');
-Route::get('/Contato', [\App\Http\Controllers\PrincipalController::class, 'contato'])->name('site.contato');
+Route::get('/gabarito/{id_prova}', [\App\Http\Controllers\PrincipalController::class, 'exibeGabarito'])->name('site.gabarito');
 //Aplicativos protegidos
 Route::middleware([\App\Http\Middleware\AutenticacaoMiddleware::class])->prefix('/App')->group(function(){
     Route::get('/home', [\App\Http\Controllers\PrincipalController::class, 'principallogado'])->name('app.index');
     Route::get('', [\App\Http\Controllers\PrincipalController::class, 'principallogado'])->name('app.index');
     Route::get('/Chamada', [\App\Http\Controllers\ProdutoController::class, 'chamada'])->name('app.chamada');
-    Route::get('/Financeiro', [\App\Http\Controllers\ProdutoController::class, 'financeiro'])->name('app.financeiro');
+    Route::get('/financeiro', [\App\Http\Controllers\FinanceiroController::class, 'financeiro'])->name('app.financeiro');
     Route::get('/Pagamento', [\App\Http\Controllers\EstacionamentoController::class, 'pagamentoEstacionamento'])->name('app.financeiroestacionamento');
     Route::get('/Provas', [\App\Http\Controllers\ProdutoController::class, 'provas'])->name('app.provas');
-    Route::get('/PracadeAlimentacao', [\App\Http\Controllers\ProdutoController::class, 'pracadealimentacao'])->name('app.pracaalimentacao');
-    Route::get('/Estacionamento', [\App\Http\Controllers\EstacionamentoController::class, 'estacionamento'])->name('app.estacionamento');
-    Route::get('/Estacionamento/ocupar/{id_vaga}', [\App\Http\Controllers\EstacionamentoController::class, 'ocuparvaga'])->name('app.ocuparvaga');
+    Route::get('/Provas/Cadastrar', [\App\Http\Controllers\ProvaController::class, 'provas'])->name('app.cadastrarprovas');
+    Route::post('/Provas/Cadastrar', [\App\Http\Controllers\ProvaController::class, 'cadastrarprovas'])->name('app.cadastrarprovas');
+    Route::get('/Provas/Visualizar', [\App\Http\Controllers\ProvaController::class, 'visualizarprovas'])->name('app.visualizarprovas');
+    Route::get('/Provas/Consulta/{id_prova?}', [\App\Http\Controllers\ProvaController::class, 'consultaprova'])->name('app.consultaprova');
+    Route::get('/pracadeAlimentacao', [\App\Http\Controllers\PracaAlimentacaoController::class, 'pracadealimentacao'])->name('app.pracaalimentacao');
+    Route::get('/consultaCardapio/{id_loja?}', [\App\Http\Controllers\PracaAlimentacaoController::class, 'consultarcardapio'])->name('app.consultacardapio');
+    Route::get('/realizarPedido/{id_item?}/{qtd?}', [\App\Http\Controllers\PracaAlimentacaoController::class, 'realizarpedido'])->name('app.pedirpracaalimentacao');
+    Route::get('/estacionamento', [\App\Http\Controllers\EstacionamentoController::class, 'estacionamento'])->name('app.estacionamento');
+    Route::get('/estacionamento/ocupar/{id_vaga}', [\App\Http\Controllers\EstacionamentoController::class, 'ocuparvaga'])->name('app.ocuparvaga');
 });
 
 Route::get('/login/{erro?}', [\App\Http\Controllers\LoginController::class, 'login'])->name('site.login');
